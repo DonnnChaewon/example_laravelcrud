@@ -63,6 +63,7 @@
         @endif
     </div>
     <form method="post" action="{{route('kdrama.update', ['kdrama' => $kdrama])}}">
+        <!-- placeholder adalah tulisan yang muncul ketika form yang harus diisi dalam keadaan kosong -->
         @csrf
         @method('put')
         <div><center>
