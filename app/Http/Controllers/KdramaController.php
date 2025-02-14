@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Kdrama;
 
 class KdramaController extends Controller {
-    // Untuk melihat semua data ynag sudah dimasukkan
+    // Untuk melihat semua data yang sudah dimasukkan
     public function index() {
         $kdramas = Kdrama::all();
         return view('kdramas.index', ['kdramas' => $kdramas]);
