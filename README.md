@@ -64,3 +64,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Updates
+
+Add explanation for the function in KdramaController.php<br>
+Fix typo for the explanation<br>
+Add explanation in the code of create.blade.php for create data<br>
+Add explanation in the code of edit.blade.php for edit data<br>
+Add explanation in the code of index.blade.php for view data<br>
