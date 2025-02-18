@@ -75,6 +75,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
   ```
 ## API
 - Open the Postman application.<br>
+- Add functions to view (index), show, store, update, and delete by press the new button in upper left and choose HTTP.<br>
+- Use GET for view and show, POST for store, PUT for update, and DELETE for delete data.<br>
+- Type localhost:8000/api/kdrama in your browser and it will appear some text in black background.<br>
+- For store and update, select body -> x-www-form-urlencoded and then fill the columns in the table and the values.<br>
 
 ## Updates
 Add explanation for the function in KdramaController.php for CRUD.<br>
@@ -83,4 +87,4 @@ Add explanation in the code of create.blade.php for create data.<br>
 Add explanation in the code of edit.blade.php for edit data.<br>
 Add explanation in the code of index.blade.php for view data.<br>
 Add additional code in api.php for API.<br>
-Add a KdramaApiController file via upload for API.<br>
+Add a KdramaApiController file via upload for API.
