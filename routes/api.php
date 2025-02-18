@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KdramaApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('kdrama', [KdramaApiController::class, 'index']);
+Route::get('kdrama/{id}', [KdramaApiController::class, 'show']);
+Route::post('kdrama', [KdramaApiController::class, 'store']);
+Route::put('kdrama/{id}', [KdramaApiController::class, 'update']);
+Route::delete('kdrama/{id}', [KdramaApiController::class, 'destroy']);
+
+Route::apiResource('kdrama', KdramaApiController::class);
