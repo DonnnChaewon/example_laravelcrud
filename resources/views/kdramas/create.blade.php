@@ -10,7 +10,7 @@
         }
 
         form {
-            width: 50%;
+            width: 60%;
             margin: auto;
             padding: 20px;
             background-color: yellow;
@@ -64,6 +64,7 @@
         @endif
     </div>
     <form method="post" action="{{route('kdrama.store')}}">
+        <!-- placeholder adalah tulisan yang muncul ketika form yang harus diisi dalam keadaan kosong -->
         @csrf
         @method('post')
         <div><center>

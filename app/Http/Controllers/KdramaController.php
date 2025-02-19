@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Kdrama;
 
 class KdramaController extends Controller {
+    // Untuk melihat semua data yang sudah dimasukkan
     public function index() {
         $kdramas = Kdrama::all();
         return view('kdramas.index', ['kdramas' => $kdramas]);
@@ -15,6 +16,7 @@ class KdramaController extends Controller {
         return view('kdramas.create');
     }
 
+    // Fungsi store untuk menyimpan data setelah create sebuah data
     public function store (Request $request) {
         $data = $request->validate([
             'title' => 'required',
@@ -33,6 +35,7 @@ class KdramaController extends Controller {
         return view('kdramas.edit', ['kdrama' => $kdrama]);
     }
 
+    // Fungsi update untuk menyimpan data yang sudah diedit
     public function update(Kdrama $kdrama, Request $request) {
         $data = $request->validate([
             'title' => 'required',

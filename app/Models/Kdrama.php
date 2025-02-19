@@ -8,11 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Kdrama extends Model {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'production',
-        'episodes',
-        'start',
-        'end'
-    ];
+    protected $table = "kdramas";
+
+    protected $fillable = ['title', 'production', 'episodes', 'start', 'end'];
 }
