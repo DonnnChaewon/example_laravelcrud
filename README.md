@@ -61,7 +61,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - Open this project at Visual Studio Code, new terminal and type ```php artisan serve```, and **CTRL + click** the link.<br>
 - Create database with the name **app_crud**.<br>
 - Type ```php artisan migrate``` in the new terminal to create tables in the database.<br>
-- New tab in your browser and type http://localhost:8000/kdrama to access the CRUD.<br>
+- New tab in your browser and type ```http://localhost:8000/kdrama``` to access the CRUD.<br>
 - After you deleted a data and want to add a new data afterwards, remember to auto increment the index.
 ```
 SELECT @max_value := MAX(id) FROM kdramas;
@@ -79,5 +79,6 @@ DEALLOCATE PREPARE stmt;
 - Open Postman application, go to workspaces -> create workspace -> blank workspace -> enter name and create.<br>
 - Press new button at the upper left and choose HTTP.<br>
 - In the right side of the workspace name, three dots -> add request, add five requests: index (view), show (view by index), store, update, and delete.<br>
+- Type ```http://localhost:8000/api/kdrama``` for all requests.<br>
 - For methods, index and show use GET, store use POST, update use PUT, and delete use DELETE.<br>
 - All requests use params except store and update, go to body -> x-www-form-urlencoded.<br>
