@@ -8,9 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 class KdramaApiController extends Controller {
-    /**
-     * Display a listing of the resource.
-     */
+    // Display a listing of the resource.
     public function index() {
         $data = Kdrama::orderBy('title', 'asc')->get();
         return response()->json([
@@ -20,9 +18,7 @@ class KdramaApiController extends Controller {
         ], 200);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    // Store a newly created resource in storage.
     public function store(Request $request) {
         $dataKdrama = new Kdrama;
 
@@ -57,9 +53,7 @@ class KdramaApiController extends Controller {
         ]);
     }
 
-    /**
-     * Display the specified resource.
-     */
+    // Display the specified resource.
     public function show(string $id) {
         $data = Kdrama::find($id);
 
@@ -77,9 +71,7 @@ class KdramaApiController extends Controller {
         }
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    // Update the specified resource in storage.
     public function update(Request $request, string $id) {
         $dataKdrama = Kdrama::find($id);
 
@@ -121,9 +113,7 @@ class KdramaApiController extends Controller {
         ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    // Remove the specified resource from storage.
     public function destroy(string $id) {
         $dataKdrama = Kdrama::find($id);
 

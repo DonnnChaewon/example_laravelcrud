@@ -60,7 +60,7 @@
                             @method('get')
                             <input type="submit" value="Edit" />
                         </form>
-                        <!-- Gunakan fungsi confirm agar ada peringatan setelah menekan tombolnya, jadi datanya tidak langsung terhapus -->
+                        <!-- Use the return confirm function so after pressing the delete button, it asks wheter you want to delete or not -->
                         <form method="post" action="{{route('kdrama.destroy', ['kdrama' => $kdrama])}}" style="display: inline-block;" onsubmit="return confirm('Confirm to delete this Kdrama?');">
                             @csrf
                             @method('delete')

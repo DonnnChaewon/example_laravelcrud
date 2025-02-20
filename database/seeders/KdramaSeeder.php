@@ -6,19 +6,17 @@ use App\Models\Kdrama;
 use Illuminate\Database\Seeder;
 
 class KdramaSeeder extends Seeder {
-    /**
-     * Run the database seeds.
-     */
+    // Run the database seeds.
     public function run(): void {
-        // Membuat data lokal dengan format bahasa_NEGARA
+        // Make local datas with the format language_COUNTRY
         $faker = \Faker\Factory::create('en_US');
 
-        // Membuat 10 data random
+        // Make 10 random datas
         for($i=0; $i<10; $i++) {
             Kdrama::create([
                 'title' => $faker->sentence,
                 'production' => $faker->company(),
-                // Mengambil angka random antara 12 sampai 30
+                // Take a random number from 12 to 30
                 'episodes' => $faker->numberBetween(12, 30),
                 'start' => $faker->date,
                 'end' => $faker->date
