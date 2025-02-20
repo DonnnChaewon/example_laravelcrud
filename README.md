@@ -81,4 +81,4 @@ DEALLOCATE PREPARE stmt;
 - In the right side of the workspace name, three dots -> add request, add five requests: index (view), show (view by index), store, update, and delete.<br>
 - Type ```http://localhost:8000/api/kdrama``` for all requests.<br>
 - For methods, index and show use GET, store use POST, update use PUT, and delete use DELETE.<br>
-- All requests use params except store and update, go to body -> x-www-form-urlencoded.<br>
+- All requests use params except store and update, go to body -> x-www-form-urlencoded.
